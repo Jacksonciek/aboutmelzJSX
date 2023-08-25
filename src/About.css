@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-width: screen;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+button {
+    border: transparent;
+}
+.garis {
+    flex-grow: 0.05;
+    margin: 0 10px;
+    background-color: white;
+    height: 1px;
+}
+
+
+.card {
+    border: 1px solid #F35578;
+    transition: all 250ms ease-in-out;
+}
+
+.fotobunga {
+    max-width: 100%;
+    max-height: 100%; /* Add this line to maintain aspect ratio */
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        width: 288px;
+        height: 292px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+
+    button {
+        opacity: 0;
+        cursor: not-allowed;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .isi {
+        display: block;
+        justify-content: center;
+        padding-top: 7%;
+    }
+    
+    .line {
+        opacity: 0;
+    }
+    .word{
+        align-items: center;
+        display: inline-block;
+    }
+    .fotodot{
+        padding-left: 65%;
+        transform: translateY(-350%);
+    }
+}
